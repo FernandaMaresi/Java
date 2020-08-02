@@ -39,6 +39,8 @@ public class TelaVoto extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 13)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(51, 51, 255));
         jLabel1.setText("Ano de Nascimento");
 
         btnVoto.setText("Posso Votar?");
@@ -48,10 +50,14 @@ public class TelaVoto extends javax.swing.JFrame {
             }
         });
 
+        lblR.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        lblR.setForeground(new java.awt.Color(0, 204, 102));
         lblR.setText("Resultado");
 
+        lblIdade.setForeground(new java.awt.Color(0, 0, 102));
         lblIdade.setText("0");
 
+        jLabel2.setForeground(new java.awt.Color(0, 102, 102));
         jLabel2.setText("Idade");
 
         jLabel3.setText("anos.");
@@ -81,7 +87,7 @@ public class TelaVoto extends javax.swing.JFrame {
                                 .addComponent(jLabel1)
                                 .addGap(18, 18, 18)
                                 .addComponent(txtAno, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                .addContainerGap(63, Short.MAX_VALUE))
+                .addContainerGap(49, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -99,7 +105,7 @@ public class TelaVoto extends javax.swing.JFrame {
                     .addComponent(jLabel2)
                     .addComponent(lblIdade)
                     .addComponent(jLabel3))
-                .addContainerGap(76, Short.MAX_VALUE))
+                .addContainerGap(75, Short.MAX_VALUE))
         );
 
         pack();
