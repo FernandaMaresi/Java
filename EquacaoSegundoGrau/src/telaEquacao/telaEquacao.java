@@ -510,10 +510,10 @@ public class telaEquacao extends javax.swing.JFrame {
         double deltaRaiz = Math.sqrt(d);
         lblRaizDelta.setText(String.format("%.2f", deltaRaiz));
         
-        double resultFinalx1 = (- b + deltaRaiz)/2;
+         double resultFinalx1 = (- b + deltaRaiz)/(2*a);
         lblResultadoFinalx1.setText(String.format("%.2f",resultFinalx1));
         //x²
-        double resultFinalx2 = (- b - deltaRaiz)/2;
+        double resultFinalx2 = (- b - deltaRaiz)/(2*a);
         lblResultadoFinalx2.setText(String.format("%.2f",resultFinalx2));
     }//GEN-LAST:event_btnCalcActionPerformed
 
